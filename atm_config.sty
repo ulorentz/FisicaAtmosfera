@@ -1,0 +1,95 @@
+\ProvidesPackage{atm_config}
+
+
+%%%%%%%%%%%%%%%%%%
+%%%% Packages %%%%
+%%%%%%%%%%%%%%%%%%
+\usepackage[italian]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{makeidx}
+\usepackage{amsmath}	    	    %Simboli matematici
+\usepackage{amssymb}	        	%Simboli matematici
+\usepackage{subfiles}	        	%Per dividere in più file
+\usepackage{graphicx}	        	%Inserire figure
+\usepackage{geometry}		        %Per cambiare margini 
+\usepackage{caption}		        %Commenti in figure
+\usepackage{titlesec}               %per modifica title style
+\usepackage{chemformula}            %per formule chimiche
+\usepackage[unicode]{hyperref}		%Per i link nel pdf 
+\usepackage{gensymb}				%per il simbolo dei gradi
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%% Setup dei link %%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%Definisco i link
+\hypersetup{
+        bookmarksnumbered=true,
+        bookmarksopen=true,
+        bookmarksopenlevel=1,
+        colorlinks=true,
+        linkcolor=blue,
+        pdfstartview=Fit,
+        pdfpagemode=UseOutlines,
+        citecolor=darkblue,
+        pdftitle={Appunti del corso di Fisica dell'Atmosfera}, 
+        pdfauthor={Lorenzo Uboldi},
+        pdflang={it},
+        pdfsubject={Appunti del corso di Fisica dell'Atmosfera}, 
+        pdfcreator={Lorenzo Uboldi},
+}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%% Titoli custom %%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\titleformat{\chapter}[display]
+{\bfseries\Large}
+{\filleft\MakeUppercase{\chaptertitlename} \thechapter}
+{2ex}
+{%\titlerule%
+	\filleft\Huge}
+[%\vspace{1ex}%
+\titlerule%barra orizzontale
+\vspace{6ex}] %spazio dopo la barra orizzontale del titolo
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%% Intestazioni Custom %%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0.4pt}
+\fancyhf{}
+\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+\renewcommand{\sectionmark}[1]{\markright{%
+		\ifnum\value{secnumdepth}>0 \thesection.\ \fi#1}}
+\fancypagestyle{fancyfront}{%
+	\fancyhf{}
+	\fancyhead[LE,RO]{\thepage}%
+	\fancyhead[LO]{\nouppercase{\rightmark}}%
+	\fancyhead[RE]{\nouppercase{\leftmark}}%
+}   
+\fancypagestyle{fancymain}{%
+	\fancyhf{}
+	\fancyhead[LE,RO]{\thepage}%
+	\fancyhead[LO]{\nouppercase{\rightmark}}%
+	\fancyhead[RE]{\nouppercase{%
+			\chaptername\ \thechapter. \ \leftmark}}%
+}   
+\fancypagestyle{fancyapp}{%
+	\fancyhf{}
+	\fancyhead[LE,RO]{\thepage}%
+	\fancyhead[LO]{\nouppercase{\rightmark}}%
+	\fancyhead[RE]{\nouppercase{%
+			\appendixname\ \thechapter. \ \leftmark}}%
+}   
+
+\addto{\frontmatter}{\pagestyle{fancyfront}}
+\addto{\mainmatter}{\pagestyle{fancymain}}
+\addto{\appendix}{\pagestyle{fancyapp}}
+\addto{\backmatter}{\pagestyle{fancyfront}}

@@ -1,0 +1,30 @@
+\documentclass[A4paper, 11pt]{book}
+\usepackage{atm_config}
+
+\title{Appunti del corso di 
+	\\ \Huge Fisica dell'Atmosfera}
+\author{A cura di Lorenzo Uboldi}
+\makeindex
+\begin{document}
+\frontmatter
+\maketitle
+
+	
+% Colophon
+\null % Bisogna inserire qualcosa prima di \vfill, altrimenti non funziona
+\vfill % Riempie lo spazio verticale della pagina
+\hspace*{-1.5em}\includegraphics[scale=.7]{figures/by-sa.eps}
+\begin{flushleft}
+	Quest'opera è stata rilasciata con licenza \emph{Creative Commons} Attribuzione - Condividi allo stesso modo 4.0 Internazionale. Per leggere una copia della licenza visita il sito web \url{https://creativecommons.org/licenses/by-sa/4.0/}.\\[1cm]
+	Versione aggiornata al \today,\\
+	Lorenzo Uboldi (\href{mailto:lorenzo.uboldi@studenti.unimi.it}{\ttfamily lorenzo.uboldi@studenti.unimi.it}), Milano.\\[0.2cm]
+	L'ultima versione, aggiornata e rivista, è sempre disponibile a: \url{https://github.com/ulorentz/FisicaAtmosfera}
+	
+\end{flushleft}
+
+\cleardoublepage
+
+\tableofcontents
+\mainmatter
+\input{capitoli/pressione.tex}
+\end{document}
