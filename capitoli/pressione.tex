@@ -1,15 +1,15 @@
 \chapter{Pressione}
-L'evidenza della pressione atmosferica può essere mostrata, ad esempio, con un barometro di Torricelli: capovolgendo un tubo tappato in cima riempito di mercurio in una bacinella piena di mercurio, il livello del liquido scende fino ad assestarsi ad una determinata altezza. La pressione atmosferica esercita una forza sul liquido nella bacinella che si oppone al peso che farebbe scendere il mercurio nel tubo. Precisamente, se P$_{B}$ è la pressione sulla bacinella e P$_{A}$ è quella esercitata dal mercurio nel tubo, $S$ è la sezione del tubo e $h_{\ch{Hg}}$ l'altezza della colonna di mercurio, all'equilibrio idrostatico si ha:
+L'evidenza della pressione atmosferica può essere mostrata, ad esempio, con un barometro di Torricelli: capovolgendo un tubo con una sola apertura pieno di mercurio in una bacinella con lo stesso liquido, il livello del mercurio scende fino ad assestarsi ad una determinata altezza. La pressione atmosferica esercita una forza sul liquido nella bacinella che si oppone al peso che farebbe scendere il mercurio nel tubo. Precisamente, se $P_{B}$ è la pressione sulla bacinella e $P_{A}$ è quella esercitata dal mercurio nel tubo, $S$ è la sezione del tubo e $h_{\ch{Hg}}$ l'altezza della colonna di mercurio, all'equilibrio idrostatico si ha:
 \begin{equation}
-	\text{P}_{B}=\text{P}_{atm}=\text{P}_{A}=\frac{m_{\ch{Hg}}g}{S}=\frac{\rho_{\ch{Hg}} S h_{\ch{Hg}} g}{s}=\rho_{\ch{Hg}} h_{\ch{Hg}} g 
+	P_{B}=P_{atm}=P_{A}=\frac{m_{\ch{Hg}}g}{S}=\frac{\rho_{\ch{Hg}} S h_{\ch{Hg}} g}{s}=\rho_{\ch{Hg}} h_{\ch{Hg}} g 
 \end{equation}
 il mercurio si assesta ad un'altezza di 76 cm, che corrispondono alla pressione media atmosferica di 1013 hPa.
 \section{Origine della pressione atmosferica}
-Supponiamo di avere un'atmosfera composta da un'unica particella di massa $m$ ad altezza $h$ rispetto alla superficie terrestre; inizialmente ferma cade e subisce un urto elastico. La legge oraria è
+Supponiamo di avere un'atmosfera composta da un'unica particella di massa $m$ ad altezza $h$ rispetto alla superficie terrestre; inizialmente ferma, essa cade e subisce un urto elastico. La legge oraria è
 \begin{equation}
 	y(t)=h-\frac{1}{2}gt^2
 \end{equation}
-mentre la velocità finale, di impatto, della particella è
+mentre la velocità finale all'impatto impatto della particella è
 \begin{equation}
 	v_f=\sqrt{2gh}.
 \end{equation} 
@@ -18,12 +18,12 @@ Detto $\hat{j}$ il versore ortogonale uscente dalla superficie terrestre, la var
 \begin{align}
 	\Delta \vec{v}=2\sqrt{2gh}\hat{j}
 \end{align}
-per cui, dato che il tempo che la particella impiega a cadere e tornare alla posizione iniziale è $t=2\sqrt{2h/g}$, la forza media che riceve la particella è:
+per cui, dato che il tempo che la particella impiega a cadere e tornare alla posizione iniziale è $t=2\sqrt{2h/g}$, la forza media che riceve è:
 \begin{equation}
 	\langle\vec{F}\rangle=\frac{m\Delta\vec{v}}{t}=\frac{2m\sqrt{2gh}\hat{j}}{2\sqrt{2h/g}}=mg\hat{j}.
 \end{equation}
 
-Per il terzo principio della dinamica, la forza media che riceve il pianeta è l'opposto, ovvero $\langle\vec{F}\rangle=-mg\hat{j}$. Nel caso di molte molecole, al posto della massa della singola particella, si ha:
+Per il terzo principio della dinamica, la forza media che riceve il pianeta è l'opposto, ovvero $\langle\vec{F}\rangle=-mg\hat{j}$. Nel caso di molte molecole, invece della massa della singola particella, si ha:
 \begin{equation}
 	\vec{F}=-M_{atm}g\hat{j}
 \end{equation}
@@ -31,23 +31,23 @@ dove $M_{atm}\simeq 5.26 \cdot 10^{18}$kg.
 
 L'origine della pressione atmosferica, dunque, è dovuta all'attrazione gravitazionale sulle molecole d'aria. 
 \section{Equilibrio idrostatico in atmosfera}
-Dal momento che l'atmosfera è estesa, essa interagisce con sè stessa: gli strati superiori comprimono quelli inferiori. La pressione, pertanto varia lungo la coordinata zeta. 
+Dal momento che l'atmosfera è estesa, essa interagisce con sè stessa: gli strati superiori comprimono quelli inferiori. La pressione, pertanto, varia lungo la coordinata zeta. 
 
-Consideriamo una colonna di atmosfera come in figura (INSERIRE), se lo strato di aria compreso tra il punto A e B, la cui superficie di base è $S$, si trova in equilibrio dinamico vale che $\sum\vec{F}=0$. Supponendo che la pressione sia costante lungo le coordinate $x$ e $y$, ovvero che $P=P(z)$, vale la condizione\footnote{Nota che la pressione subita da un elemento di fluido è sempre diretta verso l'interno}
+Consideriamo una colonna di atmosfera come in figura (INSERIRE), se lo strato di aria compreso tra il punto A e B, la cui superficie di base è $S$, si trova in equilibrio dinamico, allora vale che $\sum\vec{F}=0$. Supponendo che la pressione sia costante lungo le coordinate $x$ e $y$, ovvero che $P=P(z)$, si ha la condizione\footnote{Nota che la pressione subita da un elemento di fluido è sempre diretta verso l'interno}
 \begin{equation}\label{eq1}
 	(\sum\vec{F})_z=P_A S - P_B S -mg =0.
 \end{equation}
 
-Considerata una variazione infinitesima lungo $z$ 
+Considerata una variazione infinitesima lungo $z$, la pressione in B è 
 \begin{equation}
 	P_B=P_A+\frac{\partial P}{\partial z}dz
 \end{equation}
-l'equazione \eqref{eq1} diviene
+e l'equazione \eqref{eq1} diviene
 \begin{align}
 	&P_A S - P_A S -\frac{\partial P}{\partial z}dzS -\rho S g dz=0\\
-	&\Rightarrow -\frac{\partial P}{\partial z}-\rho g =0
+	&\Rightarrow -\frac{\partial P}{\partial z}-\rho g =0.
 \end{align}
-se $P=P(z)$ si ha l'\emph{equazione di equilibrio idrostatico}:
+Se $P=P(z)$ (ovvero non dipende dalle componenti $x$ e $y$) si ha l'\emph{equazione di equilibrio idrostatico}:
 \begin{equation}\label{idro}
 	\boxed{dP=-\rho g dz}.
 \end{equation}
@@ -61,14 +61,14 @@ ovvero
 	\frac{\vec{F}_P}{m}=-\frac{1}{\rho}\nabla P.
 \end{equation}
 
-L'atmosfera organizza l'evoluzione della pressione ($\nabla P$) al fine di contrastare la forza gravitazionale, è da notare che $\frac{\partial P}{\partial z}$ è ordini di grandezza più grande delle altre componenti; inoltre, lungo la coordinata $z$, la pressione deve necessariamente decrescere. 
+L'atmosfera organizza l'evoluzione della pressione ($\nabla P$) al fine di contrastare la forza gravitazionale, è da notare che $\frac{\partial P}{\partial z}$ è ordini di grandezza più grande delle altre componenti; inoltre, lungo la coordinata $z$, la pressione deve necessariamente decrescere affinché vi sia equilibrio. 
 
 \section{Variazione della pressione lungo la coordinata $z$}
-Dividendo ambo i lati dell'equazione dei gas perfetti per la massa si ottiene:
+Dividendo ambo i lati dell'equazione dei gas perfetti per la massa, si ottiene:
 \begin{equation}\label{gas}
 	\frac{PV}{m}=\frac{n RT}{m} \rightarrow \frac{P}{\rho}=\frac{R}{M}T
 \end{equation}
-dove $M$ è la massa molare. Si noti che l'equazione dei gas perfetti è accurata quando si è lontani dai cambiamenti di stato e per le maggiori componenti dell'atmosfera (\ch{O_2} e \ch{NO_2}) questo è sicuramente vero. 
+dove $M$ è la massa molare. Si noti che l'equazione dei gas perfetti è accurata quando si è lontani dai cambiamenti di stato, per le maggiori componenti dell'atmosfera (\ch{O_2} e \ch{NO_2}) questo è sicuramente vero. 
 
 Inserendo la \eqref{gas} nell'equazione dell'equilibrio idrostatico \eqref{idro}, si ottiene:
 
@@ -77,31 +77,31 @@ Inserendo la \eqref{gas} nell'equazione dell'equilibrio idrostatico \eqref{idro}
 \end{equation}
 dove $M$ è la massa molare. Considerati i maggiori componenti atmosferici, ovvero 75\% di azoto ($M_{N_2}=28$g/mol) e circa 25\% di ossigeno ($M_{O_2}=32$g/mol), si ottiene una media ponderata di $M=29$g/mol$=2.9\cdot10^{-2}$kg/mol.
 
-Per ottenere l'andamento della pressione al variare della coordinata $z$ è necessario risolvere l'equazione differenziale \eqref{dp}, il problema è che, in atmosfera, la temperatura è a sua volta dipendente della quota, ovvero $T=T(z)$.\\
+Per ottenere l'andamento della pressione al variare della coordinata $z$, è necessario risolvere l'equazione differenziale \eqref{dp}. Il problema è che, in atmosfera, la temperatura è a sua volta dipendente della quota, ovvero $T=T(z)$, e, a priori, non è una funzione nota.\\
 
 
 \subsection{Ipotesi di atmosfera isoterma}
 L'andamento della temperatura in funzione della quota è, grossolanamente, rappresentato in figura (INSERIRE). Una tecnica per risolvere la \eqref{dp} è di considerare una temperatura media $\bar{T}$ dell'atmosfera, ad esempio di 250K, e di supporla, quindi, isoterma. 
 
-Integrando la \eqref{dp} si ottiene: 
+Integrando la \eqref{dp}, si ottiene: 
 \begin{align}
 	\int_{P_0}^{P}\frac{dP'}{P'}&=-\int_{0}^{z}\frac{Mg}{R\bar{T}}dz'\\
 	\ln P \Big|_{P_0}^P&=-\frac{Mg}{R\bar{T}}z\Big|_0^z\\
 	P&=P_0\exp\left(-\frac{Mg}{R\bar{T}}z\right) \label{pz}.
 \end{align}
 
-Dalla \eqref{pz} si intuisce che a temperature maggiori la pressione diminuisce più lentamente all'aumentare della quota rispetto a temperature inferiori, e viceversa.\\ %TODO inserire figura?
+Dalla \eqref{pz}, si intuisce che a temperature maggiori la pressione varia più lentamente all'aumentare della quota rispetto a temperature inferiori, e viceversa. Difatti, maggiore è la temperatura minore è il coefficiente che moltiplica $z$ nell'esponenziale.\\ %TODO inserire figura?
 
-Un utilizzo della formula \eqref{pz} è per riportare le pressioni al livello del mare. Ogni stazione meteorologica è ad una specifica quota e per confrontare i valori di pressione rilevati in diverse coordinate geografiche è necessario confrontare dati alla stessa $z$. In altre parole per studiare $\frac{\partial P}{\partial x}$ e $\frac{\partial P}{\partial y}$ è necessario che $z$ sia costante.
+Un utilizzo della formula \eqref{pz} è per riportare le pressioni al livello del mare. Ogni stazione meteorologica è situata ad una specifica quota e per confrontare i valori di pressione rilevati in diverse coordinate geografiche è necessario confrontare dati alla stessa $z$. In altre parole per studiare $\frac{\partial P}{\partial x}$ e $\frac{\partial P}{\partial y}$ è necessario che $z$ sia costante.
 
-Ad esempio, si supponga di avere una rilevazione a Linate, $z=104$m di $P=1006.4$hPa ad una $T=10^\degree$C. Per calcolare la pressione al livello del mare:
+Ad esempio, si supponga di effettuare una rilevazione a Linate (la cui altitudine è $z=104$m) di $P=1006.4$hPa ad una $T=10^\degree$C. Per calcolare la pressione al livello del mare:
 
 \begin{equation*}
 	P(-104\text{m})=1006.4\text{hPa}\cdot\exp\left(\frac{-29\cdot10^{-3}\text{kg/mol}\cdot 9.81\text{m/s}^2\cdot (-104\text{m})}{8.314\text{J/(mol K)} \cdot293.5 \text{K}}\right)=1019.1\text{hPa}
 \end{equation*}
-Da notare che la temperatura utilizzata è quella alla quota media tra l'altitudine della stazione e il livello del mare, dal momento che nei primi strati di atmosfera il gradiente termico è di circa $0.65$K ogni 100m: $T_{media}=(283.15+0.65/2)\text{K}\sim 283.5$K.
+Da notare che la temperatura utilizzata è quella alla quota media tra l'altitudine della stazione e il livello del mare, e dal momento che nei primi strati di atmosfera il gradiente termico è di circa $0.65$K ogni 100m, si ha: $T_{media}=(283.15+0.65/2)\text{K}\sim 283.5$K.
 
-Inoltre, nello strato inferiore dell'atmosfera, il gradiente di pressione è di circa 12hPa ogni 100m.\\
+Si deduce che, nello strato inferiore dell'atmosfera, il gradiente di pressione è di circa 12hPa ogni 100m.\\
 
 La \eqref{dp} può essere integrata per ricavare la dipendenza dalla quota dalla pressione, in situazioni come gli \emph{atmospheric soundings}\footnote{Sono dei palloni aerostatici pieni di elio che vengono lasciati liberi al fine di misurare i parametri atmosferici, ad esempio la pressione e temperatura.}, la variabile indipendente è proprio la pressione e non la coordinata $z$:
 \begin{equation}
@@ -148,14 +148,14 @@ Utilizzando la \eqref{tz} nella \eqref{dp} ed integrando, si ha:
 	z(P)&=\frac{T_0}{\gamma}\left(1-\left(\frac{P}{P_0}\right)^{\frac{R\gamma}{Mg}}\right).\label{zp}
 \end{align}\\
 
-Anche in questo caso è possibile esplicitare la dipendenza della densità dalla quota, utilizzando la \eqref{zp}, si ha:
+Anche in questo caso è possibile esplicitare la dipendenza della densità dalla quota, utilizzando la \eqref{zp} si ricava:
 \begin{align}
 	\rho&=-\frac{1}{g}P_0\left(\frac{Mg}{R\gamma}\right)\left(\frac{T(z)}{T_0}\right)^{\frac{Mg}{R\gamma}-1}\left(\frac{\gamma}{T_0}\right)\\
 	\rho&=\rho_0\left(\frac{T(z)}{T_0}\right)^{\frac{Mg}{R\gamma}-1}\label{rho}
 \end{align}
 dove si è utilizzato $\rho_0=\frac{P_0M}{RT}$.
 
-Si noti che nell'atmosfera reale il gradiente termico non è costante, l'esponente della \eqref{rho} pertanto può annullarsi, situazione in cui la densità atmosferica è costante al variare della quota, esso, però, non può mai essere negativo: fisicamente la statica dei fluidi impedisce una $\frac{\partial \rho}{\partial z} >0$ (l'atmosfera non sarebbe in equilibrio). Nella condizione limite in cui l'esponente si annulla si ha che $\gamma =\frac{Mg}{R}=0.034$K/m$=3.4$K$/100$m. Questo è il limite che il gradiente termico può raggiungere, proprio perché si perde la stabilità statica è detto \emph{gradiente autoconvettivo}. 
+Si noti che nell'atmosfera reale il gradiente termico non è costante, l'esponente della \eqref{rho} pertanto può annullarsi: in questa situazione la densità atmosferica è costante al variare della quota. L'esponente, però, non può mai essere negativo: fisicamente la statica dei fluidi impedisce una $\frac{\partial \rho}{\partial z} >0$ (l'atmosfera non sarebbe in equilibrio). Nella condizione limite in cui l'esponente si annulla si ha che $\gamma =\frac{Mg}{R}=0.034$K/m$=3.4$K$/100$m. Questo è il limite massimo che il gradiente termico può raggiungere, e proprio perché si perde la stabilità statica è detto \emph{gradiente autoconvettivo}. 
 
 \subsubsection{Confronto tra le due ipotesi}
 È utile confrontare i risultati ottenuti con l'ipotesi di atmosfera isoterma e di gradiente troposferico medio. 
